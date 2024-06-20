@@ -3,7 +3,7 @@ import React from "react";
 
 const Hero: React.FC = () => {
   return (
-    <div className="bg-slate-300 w-full h-screen flex items-center">
+    <div className="bg-neutral-200 w-full h-screen flex items-center">
       <div className="container mx-auto flex flex-col-reverse md:flex-row items-center justify-between">
         <div className="text-center md:text-left md:w-1/2">
           <p className="text-gray-500 mt-4 text-lg">welcome</p>
