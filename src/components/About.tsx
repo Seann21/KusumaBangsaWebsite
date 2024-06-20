@@ -2,6 +2,7 @@ import React from 'react';
 
 export const About: React.FC = () => {
   return (
+    <div className='bg-neutral-100 w-full'>
     <div className="container mx-auto p-4">
       <div className="flex flex-col md:flex-row items-center">
         <div className="w-full md:w-1/3 flex justify-center mb-4 md:mb-0">
@@ -16,6 +17,7 @@ export const About: React.FC = () => {
             Misi Kami Adalah Untuk Mendidik Dan Melatih Generasi Muda Menjadi Profesional Yang Beretika, Kreatif, Dan Berdaya Saing Tinggi Di Pasar Global. Dengan Pendekatan Pembelajaran Yang Holistik Dan Berbasis Proyek, Kami Memastikan Bahwa Setiap Siswa Mendapatkan Pengalaman Belajar Yang Menyeluruh Dan Aplikatif.
           </p>
         </div>
+      </div>
       </div>
     </div>
   );

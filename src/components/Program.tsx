@@ -2,6 +2,7 @@ import React from 'react';
 
 const Program: React.FC = () => {
   return (
+    <div className='bg-neutral-100 w-full'>
     <div className="container mx-auto p-4">
       <h1 className="text-3xl font-bold text-center mb-8 underline">PROGRAM JURUSAN</h1>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-8 p-6">
@@ -29,6 +30,7 @@ const Program: React.FC = () => {
           <img src="/Jurusan/electro.png" alt="Elektro" className="w-20 h-20 mb-2" />
           <p className="text-center">ELEKTRO</p>
         </div>
+      </div>
       </div>
     </div>
   );
