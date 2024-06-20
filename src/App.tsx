@@ -1,13 +1,18 @@
-import './App.css'
+import React from "react";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 import { About } from './components/About';
 import Program from './components/Program';
-function App() {
-  return (
-    <>
-    <About/>
-    <Program/>
-    </>
-  )
-}
 
-export default App
+const App: React.FC = () => {
+  return (
+    <div>
+      <Navbar />
+      <Hero />
+       <About/>
+      <Program/>
+    </div>
+  );
+};
+
+export default App;
