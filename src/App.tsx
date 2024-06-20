@@ -1,10 +1,11 @@
-
 import './App.css'
-
+import { About } from './components/About';
+import Program from './components/Program';
 function App() {
   return (
     <>
-     <h1 className='text-center text-2xl bg-blue-600'>Halo kamu iya kamu</h1>
+    <About/>
+    <Program/>
     </>
   )
 }
