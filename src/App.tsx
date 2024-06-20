@@ -1,12 +1,15 @@
+// src/App.tsx
+import React from "react";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 
-import './App.css'
-
-function App() {
+const App: React.FC = () => {
   return (
-    <>
-     <h1 className='text-center text-2xl bg-blue-600'>Halo kamu iya kamu</h1>
-    </>
-  )
-}
+    <div>
+      <Navbar />
+      <Hero />
+    </div>
+  );
+};
 
-export default App
+export default App;

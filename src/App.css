@@ -5,6 +5,12 @@
   text-align: center;
 }
 
+/* src/styles/globals.css */
+.logo-large {
+  height: 100px; /* Adjust as needed */
+  width: 300px;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
