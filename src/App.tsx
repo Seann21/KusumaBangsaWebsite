@@ -1,10 +1,19 @@
 
 import './App.css'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 function App() {
   return (
     <>
-     <h1 className='text-center text-2xl bg-blue-600'>Halo kamu iya kamu</h1>
+     <div>
+      {/* Komponen lain di sini */}
+      <Contact />
+    </div>
+    <div className="min-h-screen flex flex-col">
+      {/* Konten website lainnya */}
+      <Footer />
+    </div>
     </>
   )
 }
