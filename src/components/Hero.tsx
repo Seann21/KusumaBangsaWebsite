@@ -1,17 +1,44 @@
 // src/components/HeroSection.tsx
 import React from "react";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 const Hero: React.FC = () => {
+  const [text] = useTypewriter({
+    words: [
+      "KUSUMA BANGSA",
+      "BISA",
+      "HEBAT",
+      "SIAP KERJA",
+      "SANTUN",
+      "MANDIRI DAN KREATIF",
+    ],
+    loop: true,
+    typeSpeed: 120,
+    deleteSpeed: 80,
+  });
+
   return (
-    <div className="bg-neutral-200 w-full h-screen flex items-center">
+    <div className="bg-neutral-200 w-full h-screen flex items-center mb-16">
       <div className="container mx-auto flex flex-col-reverse md:flex-row items-center justify-between">
         <div className="text-center md:text-left md:w-1/2">
-          <p className="text-gray-500 mt-4 text-lg">welcome</p>
-          <h1 className="text-blue-900 font-bold mt-2 text-4xl md:text-5xl">
-            SMK KUSUMA BANGSA
+          <p className="text-gray-500 mt-4 text-2xl md:3xl font-bold">
+            <span style={{ color: "#1B4E6B" }}>
+              The School <br />
+              Vocational Education
+            </span>
+          </p>
+          <h1 className="text-5xl md:text-5xl font-bold my-4 ">
+            <span style={{ color: "#1B4E6B" }}>SMK </span>{" "}
+            <span style={{ color: "#1B4E6B" }}>{text}</span>
+            <span style={{ color: "red" }}>
+              <Cursor cursorStyle="|" />
+            </span>
           </h1>
-          <p className="text-gray-500 mt-2 text-lg">
-            SMK Bisa, SMK Hebat, Siap Kerja, Santun, Mandiri dan Kreatif.
+          <p className="text-gray-500 mt-4 text-1xl md:3xl ">
+            <span style={{ color: "#1B4E6B" }}>
+              Mencetak Lulusan Yang Siap Kerja Dengan Kompetensi Unggul <br />
+              dibidang Industri
+            </span>
           </p>
           <div className="mt-8 flex flex-wrap justify-center md:justify-start space-x-4">
             <a
@@ -28,7 +55,7 @@ const Hero: React.FC = () => {
             </a>
           </div>
         </div>
-        <div className="md:w-1/2">
+        <div className="md:w-1/2" data-aos="fade-left">
           <img
             src="/home2.png"
             alt="Logo SMK KUSUMA BANGSA"
