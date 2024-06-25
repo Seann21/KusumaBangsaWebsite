@@ -10,54 +10,26 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <div className="bg-primary p-4">
+    <div className="bg-primary p-4 w-full">
       <div className="container mx-auto flex justify-between items-center">
         <img
-          src="/logo.png"
+          src="/logoinov.png"
           alt="logo"
-          className="logo h-10 mb-2" // Adjust width and height as needed
+          className="logo h-10 mb-2"
         />
-
-        {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-4 items-center desktop-nav">
-          <a
-            href="#"
-            className="nav-link relative text-white p-2 rounded hover:bg-primary-600"
-          >
-            Home
-          </a>
-          <a
-            href="#"
-            className="nav-link relative text-white p-2 rounded hover:bg-primary-600"
-          >
-            About
-          </a>
-          <a
-            href="#"
-            className="nav-link relative text-white p-2 rounded hover:bg-primary-600"
-          >
-            Program
-          </a>
-          <a
-            href="#"
-            className="nav-link relative text-white p-2 rounded hover:bg-primary-600"
-          >
-            Contact
-          </a>
-          <button className="bg-red-600 text-white p-2 hover:bg-red-700 rounded">
-            Login
-          </button>
+          <a href="#home" className="nav-link relative text-white p-2 rounded hover:bg-primary-600">Home</a>
+          <a href="#about" className="nav-link relative text-white p-2 rounded hover:bg-primary-600">About</a>
+          <a href="#program" className="nav-link relative text-white p-2 rounded hover:bg-primary-600">Program</a>
+          <a href="#contact" className="nav-link relative text-white p-2 rounded hover:bg-primary-600">Contact</a>
+          <button className="bg-red-600 text-white p-2 hover:bg-red-700 rounded">Login</button>
         </div>
-
-        {/* Mobile Navigation Toggle */}
         <div className="md:hidden">
           <button onClick={toggleMenu} className="text-white">
             {isOpen ? <FaTimes size={28} /> : <FaBars size={28} />}
           </button>
         </div>
       </div>
-
-      {/* Mobile Navigation Items */}
       <motion.div
         initial={{ height: 0, opacity: 0 }}
         animate={{ height: isOpen ? "auto" : 0, opacity: isOpen ? 1 : 0 }}
@@ -65,33 +37,11 @@ const Navbar: React.FC = () => {
         className="md:hidden overflow-hidden"
       >
         <div className="mt-4 space-y-2">
-          <a
-            href="#"
-            className="nav-link relative block text-white p-2 rounded hover:bg-primary-600"
-          >
-            Home
-          </a>
-          <a
-            href="#"
-            className="nav-link relative block text-white p-2 rounded hover:bg-primary-600"
-          >
-            About
-          </a>
-          <a
-            href="#"
-            className="nav-link relative block text-white p-2 rounded hover:bg-primary-600"
-          >
-            Program
-          </a>
-          <a
-            href="#"
-            className="nav-link relative block text-white p-2 rounded hover:bg-primary-600"
-          >
-            Contact
-          </a>
-          <button className="bg-red-600 text-white w-full p-2 rounded">
-            Login
-          </button>
+          <a href="#home" className="nav-link relative block text-white p-2 rounded hover:bg-primary-600">Home</a>
+          <a href="#about" className="nav-link relative block text-white p-2 rounded hover:bg-primary-600">About</a>
+          <a href="#program" className="nav-link relative block text-white p-2 rounded hover:bg-primary-600">Program</a>
+          <a href="#contact" className="nav-link relative block text-white p-2 rounded hover:bg-primary-600">Contact</a>
+          <button className="bg-red-600 text-white w-full p-2 rounded">Login</button>
         </div>
       </motion.div>
     </div>
