@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="flex flex-col items-center md:items-start lg:items-center mt-4">
             <img 
-              src="/img/logoinov.png"
+              src="/img/logo.png"
               alt="SMK Kusuma Bangsa"
               className="w-48 mb-4"
             />
