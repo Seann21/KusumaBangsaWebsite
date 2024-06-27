@@ -10,19 +10,37 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <div className="bg-primary p-4 w-full">
+    <div className="bg-primary p-4 w-full  fixed top-0 left-0 z-50">
       <div className="container mx-auto flex justify-between items-center">
-        <img
-          src="/logoinov.png"
-          alt="logo"
-          className="logo h-10 mb-2"
-        />
+        <img src="/logo.png" alt="logo" className="logo h-10 mb-2" />
         <div className="hidden md:flex space-x-4 items-center desktop-nav">
-          <a href="#home" className="nav-link relative text-white p-2 rounded hover:bg-primary-600">Home</a>
-          <a href="#about" className="nav-link relative text-white p-2 rounded hover:bg-primary-600">About</a>
-          <a href="#program" className="nav-link relative text-white p-2 rounded hover:bg-primary-600">Program</a>
-          <a href="#contact" className="nav-link relative text-white p-2 rounded hover:bg-primary-600">Contact</a>
-          <button className="bg-red-600 text-white p-2 hover:bg-red-700 rounded">Login</button>
+          <a
+            href="#home"
+            className="nav-link relative text-white p-2 rounded hover:bg-primary-600 hover:border-b-2"
+          >
+            Home
+          </a>
+          <a
+            href="#about"
+            className="nav-link relative text-white p-2 rounded hover:bg-primary-600 hover:border-b-2"
+          >
+            About
+          </a>
+          <a
+            href="#program"
+            className="nav-link relative text-white p-2 rounded hover:bg-primary-600 hover:border-b-2"
+          >
+            Program
+          </a>
+          <a
+            href="#contact"
+            className="nav-link relative text-white p-2 rounded hover:bg-primary-600 hover:border-b-2"
+          >
+            Contact
+          </a>
+          <button className="bg-red-600 text-white p-2 hover:bg-red-700 rounded">
+            Login
+          </button>
         </div>
         <div className="md:hidden">
           <button onClick={toggleMenu} className="text-white">
@@ -33,15 +51,37 @@ const Navbar: React.FC = () => {
       <motion.div
         initial={{ height: 0, opacity: 0 }}
         animate={{ height: isOpen ? "auto" : 0, opacity: isOpen ? 1 : 0 }}
-        transition={{ duration: 0.3, ease: "easeInOut" }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
         className="md:hidden overflow-hidden"
       >
         <div className="mt-4 space-y-2">
-          <a href="#home" className="nav-link relative block text-white p-2 rounded hover:bg-primary-600">Home</a>
-          <a href="#about" className="nav-link relative block text-white p-2 rounded hover:bg-primary-600">About</a>
-          <a href="#program" className="nav-link relative block text-white p-2 rounded hover:bg-primary-600">Program</a>
-          <a href="#contact" className="nav-link relative block text-white p-2 rounded hover:bg-primary-600">Contact</a>
-          <button className="bg-red-600 text-white w-full p-2 rounded">Login</button>
+          <a
+            href="#home"
+            className="nav-link relative block text-white p-2 rounded hover:bg-primary-600 hover:border-b-2"
+          >
+            Home
+          </a>
+          <a
+            href="#about"
+            className="nav-link relative block text-white p-2 rounded hover:bg-primary-600 hover:border-b-2"
+          >
+            About
+          </a>
+          <a
+            href="#program"
+            className="nav-link relative block text-white p-2 rounded hover:bg-primary-600 hover:border-b-2"
+          >
+            Program
+          </a>
+          <a
+            href="#contact"
+            className="nav-link relative block text-white p-2 rounded hover:bg-primary-600 hover:border-b-2"
+          >
+            Contact
+          </a>
+          <button className="bg-red-600 text-white w-full p-2 rounded">
+            Login
+          </button>
         </div>
       </motion.div>
     </div>
