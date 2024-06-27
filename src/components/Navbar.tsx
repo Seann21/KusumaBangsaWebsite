@@ -10,12 +10,12 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <div className="bg-primary p-4 w-full  fixed top-0 left-0 z-50">
+    <div className="bg-primary p-4 w-full fixed top-0 left-0 z-50">
       <div className="container mx-auto flex justify-between items-center">
         <img src="/logo.png" alt="logo" className="logo h-10 mb-2" />
         <div className="hidden md:flex space-x-4 items-center desktop-nav">
           <a
-            href="#home"
+            href="#Home"
             className="nav-link relative text-white p-2 rounded hover:bg-primary-600 hover:border-b-2"
           >
             Home
@@ -38,9 +38,13 @@ const Navbar: React.FC = () => {
           >
             Contact
           </a>
-          <button className="bg-red-600 text-white p-2 hover:bg-red-700 rounded">
+          <a
+            href="https://smkkusumabangsa.my.id/"
+            className="bg-red-600 text-white p-2 hover:bg-red-700 rounded"
+            target="_blank"
+          >
             Login
-          </button>
+          </a>
         </div>
         <div className="md:hidden">
           <button onClick={toggleMenu} className="text-white">
@@ -56,7 +60,7 @@ const Navbar: React.FC = () => {
       >
         <div className="mt-4 space-y-2">
           <a
-            href="#home"
+            href="#Home"
             className="nav-link relative block text-white p-2 rounded hover:bg-primary-600 hover:border-b-2"
           >
             Home
@@ -79,9 +83,13 @@ const Navbar: React.FC = () => {
           >
             Contact
           </a>
-          <button className="bg-red-600 text-white w-full p-2 rounded">
+          <a
+            href="https://smkkusumabangsa.my.id/"
+            className="bg-red-600 text-white w-full p-2 rounded block text-center"
+            target="_blank"
+          >
             Login
-          </button>
+          </a>
         </div>
       </motion.div>
     </div>

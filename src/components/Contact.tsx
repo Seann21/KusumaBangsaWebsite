@@ -23,7 +23,7 @@ const Contact: React.FC = () => {
 
   return (
     <div id="contact" className="max-w-4xl mx-auto p-6">
-      <h1 className="text-2xl font-bold mb-6 text-center">CONTACT</h1>
+      <h1 className="text-4xl font-bold mb-6 text-center my-8">CONTACT</h1>
       <div className="bg-white rounded-lg shadow-2xl p-6">
         <div className="flex flex-col md:flex-row gap-6">
           <div className="flex-1">

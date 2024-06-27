@@ -22,9 +22,9 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4 border-b border-white pb-2">Quick Links</h3>
             <ul className="text-gray-400 text-sm space-y-2">
-              <li><a href="#" className="hover:text-white transition duration-300">Home</a></li>
-              <li><a href="#" className="hover:text-white transition duration-300">About</a></li>
-              <li><a href="#" className="hover:text-white transition duration-300">Program</a></li>
+              <li><a href="#Home" className="hover:text-white transition duration-300">Home</a></li>
+              <li><a href="#about" className="hover:text-white transition duration-300">About</a></li>
+              <li><a href="#program" className="hover:text-white transition duration-300">Program</a></li>
             </ul>
           </div>
           
