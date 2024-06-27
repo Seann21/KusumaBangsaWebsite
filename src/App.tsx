@@ -6,17 +6,18 @@ import Program from './components/Program';
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
-const App: React.FC = () => {
+
+function App() {
   return (
-    <div className="app-container">
-      <Navbar />
-      <Hero />
-      <About />
-      <Program />
+    <> <Navbar />
+     <Hero />
+     <About />
+     <Program />
       <Contact />
+       <br></br>
       <Footer />
-    </div>
-  );
-};
+    </>
+  )
+}
 
 export default App;

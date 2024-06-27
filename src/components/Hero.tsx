@@ -19,9 +19,10 @@ const Hero: React.FC = () => {
 
   return (
     <div
-      id="home"
+      id="Home"
       className="bg-neutral-200 w-full h-screen mt-20 flex items-center p-10"
     >
+ <div className="container mx-auto p-4 mx-12">
       <div className="container mx-auto flex flex-col-reverse md:flex-row items-center justify-between">
         <div className="text-center md:text-left md:w-1/2">
           <p className="text-gray-500 mt-4 text-2xl md:3xl font-bold">
@@ -66,6 +67,7 @@ const Hero: React.FC = () => {
           />
         </div>
       </div>
+    </div>
     </div>
   );
 };
