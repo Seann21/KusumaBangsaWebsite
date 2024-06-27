@@ -22,9 +22,8 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div className='bg-neutral-200'>
-    <div id="contact" className="max-w-4xl mx-auto py-14">
-      <h1 className="text-4xl font-bold mb-6 text-center p-10">CONTACT</h1>
+    <div id="contact" className="max-w-4xl mx-auto p-6">
+      <h1 className="text-2xl font-bold mb-6 text-center">CONTACT</h1>
       <div className="bg-white rounded-lg shadow-2xl p-6">
         <div className="flex flex-col md:flex-row gap-6">
           <div className="flex-1">
@@ -68,7 +67,7 @@ const Contact: React.FC = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                <p>Jl. Wijaya Kusuma. No.82, Surabaya, Jawa Timur</p>
+                <p>Jl.Baloweiti Kusuma. No.82, Surabaya, Jawa Timur</p>
               </div>
               <div className="flex items-center mb-2">
                 <svg className="w-5 h-5 text-orange-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -88,7 +87,6 @@ const Contact: React.FC = () => {
         </div>
           </div>
         </div>
-      </div>
       </div>
     </div>
   );

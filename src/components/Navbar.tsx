@@ -13,16 +13,38 @@ const Navbar: React.FC = () => {
     <div className="bg-primary p-4 w-full">
       <div className="container mx-auto flex justify-between items-center">
         <img
-          src="/logoinov.png"
-          alt="logo"
-          className="logo h-10 mb-2"
+          src="/img/logo.png"
+          alt="SMK Kusuma Bangsa"
+          className="w-48 mb-4"
         />
         <div className="hidden md:flex space-x-4 items-center desktop-nav">
-          <a href="#home" className="nav-link relative text-white p-2 rounded hover:bg-primary-600">Home</a>
-          <a href="#about" className="nav-link relative text-white p-2 rounded hover:bg-primary-600">About</a>
-          <a href="#program" className="nav-link relative text-white p-2 rounded hover:bg-primary-600">Program</a>
-          <a href="#contact" className="nav-link relative text-white p-2 rounded hover:bg-primary-600">Contact</a>
-          <button className="bg-red-600 text-white p-2 hover:bg-red-700 rounded">Login</button>
+          <a
+            href="#home"
+            className="nav-link relative text-white p-2 rounded hover:bg-primary-600"
+          >
+            Home
+          </a>
+          <a
+            href="#about"
+            className="nav-link relative text-white p-2 rounded hover:bg-primary-600"
+          >
+            About
+          </a>
+          <a
+            href="#program"
+            className="nav-link relative text-white p-2 rounded hover:bg-primary-600"
+          >
+            Program
+          </a>
+          <a
+            href="#contact"
+            className="nav-link relative text-white p-2 rounded hover:bg-primary-600"
+          >
+            Contact
+          </a>
+          <button className="bg-red-600 text-white p-2 hover:bg-red-700 rounded">
+            Login
+          </button>
         </div>
         <div className="md:hidden">
           <button onClick={toggleMenu} className="text-white">
@@ -37,11 +59,33 @@ const Navbar: React.FC = () => {
         className="md:hidden overflow-hidden"
       >
         <div className="mt-4 space-y-2">
-          <a href="#home" className="nav-link relative block text-white p-2 rounded hover:bg-primary-600">Home</a>
-          <a href="#about" className="nav-link relative block text-white p-2 rounded hover:bg-primary-600">About</a>
-          <a href="#program" className="nav-link relative block text-white p-2 rounded hover:bg-primary-600">Program</a>
-          <a href="#contact" className="nav-link relative block text-white p-2 rounded hover:bg-primary-600">Contact</a>
-          <button className="bg-red-600 text-white w-full p-2 rounded">Login</button>
+          <a
+            href="#home"
+            className="nav-link relative block text-white p-2 rounded hover:bg-primary-600"
+          >
+            Home
+          </a>
+          <a
+            href="#about"
+            className="nav-link relative block text-white p-2 rounded hover:bg-primary-600"
+          >
+            About
+          </a>
+          <a
+            href="#program"
+            className="nav-link relative block text-white p-2 rounded hover:bg-primary-600"
+          >
+            Program
+          </a>
+          <a
+            href="#contact"
+            className="nav-link relative block text-white p-2 rounded hover:bg-primary-600"
+          >
+            Contact
+          </a>
+          <button className="bg-red-600 text-white w-full p-2 rounded">
+            Login
+          </button>
         </div>
       </motion.div>
     </div>
