@@ -1,30 +1,49 @@
-# React + TypeScript + Vite
+# SMK Kusuma Bangsa
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+![Preview](public/Mockup.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+A Kusuma Bangsa Vocational School website that upholds the integration of academic information systems (SIAKAD).
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Live Demo
+[Website Demo](https://smkkusumabangsa-b2018.web.app/)
 
-- Configure the top-level `parserOptions` property like this:
+## Features
+### Website
+- **About**: Provides information about the school's vision and mission.
+- **Programs**: Details the various departments and programs offered by the school.
+- **Contact**: Directs users on how to get in touch with the school.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+### SIAKAD Integration
+- **Login System**:
+  - Admin, Teacher, and Student roles, each with specific functionalities.
+  - Admin can add data for teachers and students, create classes, add subjects, and post announcements for the school community.
+  - Teachers can view schedules, enter grades for their classes, and mark attendance.
+  - Students can view announcements and check their grades.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Login SIAKAD
+1. For Admin: `admin@admin.com` / `admin123`
+2. For Teacher: `pakman@gurukubangsa` / `pakman123`
+3. For Student: `siswa@siswabangsa` / `siswa123`
+
+## Technologies Used
+### Website
+- **React.js**: For building the user interface.
+- **Tailwind CSS**: For styling and layout customization.
+- **TypeScript**: Adds type safety to JavaScript.
+- **Framer Motion**: For animations and transitions.
+
+### SIAKAD
+- **Laravel**: Backend framework for managing the SIAKAD system.
+- **Bootstrap**: For responsive and modern UI design.
+- **jQuery**: For simplifying JavaScript operations.
+
+## Team
+This project was developed by a team of 8 members, including programmers and UI/UX designers, as part of a college assignment.
+
+## Contribution
+At this moment, the project is private and contributions are not accepted.
+
+## License
+This project is licensed under the [MIT License](LICENSE).
