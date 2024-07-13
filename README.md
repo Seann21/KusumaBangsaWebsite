@@ -1,4 +1,4 @@
-# SMK Kusuma Bangsa
+<h1 align="center"> SMK KUSUMA BANGSA </h1>
 
 
 ![Preview](public/Mockup.png)
