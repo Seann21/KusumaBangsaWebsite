@@ -22,7 +22,7 @@ A Kusuma Bangsa Vocational School website that upholds the integration of academ
   - Teachers can view schedules, enter grades for their classes, and mark attendance.
   - Students can view announcements and check their grades.
 
-### Login SIAKAD (Don't worry using dummy data because this is a simulation)
+### Login SIAKAD (Don't worry that the website uses dummy data because this is a simulation.)
 1. For Admin: `admin@admin.com` / `admin123`
 2. For Teacher: `pakman@gurukubangsa` / `pakman123`
 3. For Student: `siswa@siswabangsa` / `siswa123`
