@@ -4,7 +4,7 @@
 ![Preview](public/Mockup.png)
 
 
-A Kusuma Bangsa Vocational School website that upholds the integration of academic information systems (SIAKAD).
+A Kusuma Bangsa Vocational School website that upholds the integration of academic information systems (SIAKAD) and Of course, using dummy data because this is a simulation
 
 ### Live Demo
 [Website Demo](https://smkkusumabangsa-b2018.web.app/)
